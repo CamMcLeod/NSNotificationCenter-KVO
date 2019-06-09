@@ -19,6 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [NSNotificationCenter.defaultCenter addObserver:self selector: @selector(stepperChanged:) name: @"stepperWasChanged" object: nil];
+    self.stepperCounterLabel.text = @"0";
+}
+
+- (void)stepperChanged: (NSNotification *)notification{
+    NSDictionary *stepDict = [notification userInfo];
+    
+    self.stepperCounterLabel.text = [NSString stringWithFormat:@"%@", [stepDict valueForKey:@"stepperValue"]];
+    
+}
+
+- (void)dealloc {
+    
+    [NSNotificationCenter.defaultCenter removeObserver:self];
 }
 
 @end
