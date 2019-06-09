@@ -10,6 +10,7 @@
 
 @interface FirstViewController ()
 
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
 @end
 
 @implementation FirstViewController
@@ -21,5 +22,11 @@
 
 
 - (IBAction)stepperChanged:(UIStepper *)sender {
+    
+    NSDictionary *stepDict = @{ @"stepperValue" : [NSNumber numberWithDouble:self.stepper.value]};
+    
+    NSNotification *stepperNotification = [[NSNotification alloc] initWithName:@"stepperWasChanged" object:sender userInfo:stepDict];
+    
+    [NSNotificationCenter.defaultCenter postNotification:stepperNotification];
 }
 @end

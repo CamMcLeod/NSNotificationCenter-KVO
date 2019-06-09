@@ -81,7 +81,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="item1" id="6I1-Fz-olO"/>
                     <connections>
-                        <outlet property="stepperStatus" destination="bDE-MZ-SsI" id="dKK-Vu-Uzc"/>
+                        <outlet property="stepper" destination="bDE-MZ-SsI" id="WTz-35-Bf7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCe-GO-6Q3" userLabel="First Responder" sceneMemberID="firstResponder"/>

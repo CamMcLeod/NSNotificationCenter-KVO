@@ -10,7 +10,7 @@
 
 @interface FirstViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIStepper *stepperStatus;
+
 
 - (IBAction)stepperChanged:(UIStepper *)sender;
 
