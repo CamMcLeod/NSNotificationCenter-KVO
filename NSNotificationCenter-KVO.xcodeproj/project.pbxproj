@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		62448ABE22AD902700708F8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448ABD22AD902700708F8E /* AppDelegate.m */; };
-		62448AC122AD902700708F8E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AC022AD902700708F8E /* ViewController.m */; };
+		62448AC122AD902700708F8E /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AC022AD902700708F8E /* FirstViewController.m */; };
 		62448AC422AD902700708F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62448AC222AD902700708F8E /* Main.storyboard */; };
 		62448AC622AD902800708F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62448AC522AD902800708F8E /* Assets.xcassets */; };
 		62448AC922AD902800708F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62448AC722AD902800708F8E /* LaunchScreen.storyboard */; };
 		62448ACC22AD902800708F8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448ACB22AD902800708F8E /* main.m */; };
 		62448AD622AD902800708F8E /* NSNotificationCenter_KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AD522AD902800708F8E /* NSNotificationCenter_KVOTests.m */; };
 		62448AE122AD902800708F8E /* NSNotificationCenter_KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AE022AD902800708F8E /* NSNotificationCenter_KVOUITests.m */; };
+		62448AF022AD93EB00708F8E /* item1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62448AEE22AD93EB00708F8E /* item1.pdf */; };
+		62448AF122AD93EB00708F8E /* item2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62448AEF22AD93EB00708F8E /* item2.pdf */; };
+		62448AF422AD972700708F8E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AF322AD972700708F8E /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,8 @@
 		62448AB922AD902700708F8E /* NSNotificationCenter-KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSNotificationCenter-KVO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62448ABC22AD902700708F8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62448ABD22AD902700708F8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		62448ABF22AD902700708F8E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		62448AC022AD902700708F8E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		62448ABF22AD902700708F8E /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		62448AC022AD902700708F8E /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		62448AC322AD902700708F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62448AC522AD902800708F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62448AC822AD902800708F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		62448ADC22AD902800708F8E /* NSNotificationCenter-KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSNotificationCenter-KVOUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62448AE022AD902800708F8E /* NSNotificationCenter_KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNotificationCenter_KVOUITests.m; sourceTree = "<group>"; };
 		62448AE222AD902800708F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62448AEE22AD93EB00708F8E /* item1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = item1.pdf; sourceTree = "<group>"; };
+		62448AEF22AD93EB00708F8E /* item2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = item2.pdf; sourceTree = "<group>"; };
+		62448AF222AD972700708F8E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		62448AF322AD972700708F8E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +110,13 @@
 			children = (
 				62448ABC22AD902700708F8E /* AppDelegate.h */,
 				62448ABD22AD902700708F8E /* AppDelegate.m */,
-				62448ABF22AD902700708F8E /* ViewController.h */,
-				62448AC022AD902700708F8E /* ViewController.m */,
+				62448ABF22AD902700708F8E /* FirstViewController.h */,
+				62448AC022AD902700708F8E /* FirstViewController.m */,
 				62448AC222AD902700708F8E /* Main.storyboard */,
+				62448AF222AD972700708F8E /* SecondViewController.h */,
+				62448AF322AD972700708F8E /* SecondViewController.m */,
+				62448AEE22AD93EB00708F8E /* item1.pdf */,
+				62448AEF22AD93EB00708F8E /* item2.pdf */,
 				62448AC522AD902800708F8E /* Assets.xcassets */,
 				62448AC722AD902800708F8E /* LaunchScreen.storyboard */,
 				62448ACA22AD902800708F8E /* Info.plist */,
@@ -236,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				62448AC922AD902800708F8E /* LaunchScreen.storyboard in Resources */,
+				62448AF022AD93EB00708F8E /* item1.pdf in Resources */,
 				62448AC622AD902800708F8E /* Assets.xcassets in Resources */,
+				62448AF122AD93EB00708F8E /* item2.pdf in Resources */,
 				62448AC422AD902700708F8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62448AC122AD902700708F8E /* ViewController.m in Sources */,
+				62448AF422AD972700708F8E /* SecondViewController.m in Sources */,
+				62448AC122AD902700708F8E /* FirstViewController.m in Sources */,
 				62448ACC22AD902800708F8E /* main.m in Sources */,
 				62448ABE22AD902700708F8E /* AppDelegate.m in Sources */,
 			);

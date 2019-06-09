@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  NSNotificationCenter-KVO
 //
 //  Created by Cameron Mcleod on 2019-06-09.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface SecondViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
