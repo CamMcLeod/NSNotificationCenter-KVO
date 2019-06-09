@@ -18,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.stepper.value = 0;
+    _stepper.value = self.stepper.value;
+    
+    [NSNotificationCenter.defaultCenter addObserver:self selector: @selector(stepperValueRequested:) name: @"stepperValueRequest" object: nil];
 }
 
 
@@ -30,4 +32,11 @@
     
     [NSNotificationCenter.defaultCenter postNotification:stepperNotification];
 }
+
+- (void)stepperValueRequested: (NSNotification *)notification{
+    
+    [self stepperChanged:self.stepper];
+    
+}
+
 @end

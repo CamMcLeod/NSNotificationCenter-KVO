@@ -19,8 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    
     [NSNotificationCenter.defaultCenter addObserver:self selector: @selector(stepperChanged:) name: @"stepperWasChanged" object: nil];
-    self.stepperCounterLabel.text = @"0";
+    
+    NSDictionary *requestStepValue = @{ @"stepperRequest" : [NSNumber numberWithDouble: 0]};
+    
+    NSNotification *stepperRequestNotification = [[NSNotification alloc] initWithName:@"stepperValueRequest" object:self.stepperCounterLabel userInfo: requestStepValue];
+    
+    [NSNotificationCenter.defaultCenter postNotification:stepperRequestNotification];
+    
 }
 
 - (void)stepperChanged: (NSNotification *)notification{
