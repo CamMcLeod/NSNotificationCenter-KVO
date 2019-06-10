@@ -18,6 +18,11 @@
 		62448AF022AD93EB00708F8E /* item1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62448AEE22AD93EB00708F8E /* item1.pdf */; };
 		62448AF122AD93EB00708F8E /* item2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62448AEF22AD93EB00708F8E /* item2.pdf */; };
 		62448AF422AD972700708F8E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AF322AD972700708F8E /* SecondViewController.m */; };
+		62448AF722AE2F3E00708F8E /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AF622AE2F3E00708F8E /* ThirdViewController.m */; };
+		62448AF922AE2F6A00708F8E /* item3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62448AF822AE2F6A00708F8E /* item3.pdf */; };
+		62448AFB22AE423200708F8E /* item4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 62448AFA22AE423200708F8E /* item4.pdf */; };
+		62448AFE22AE43D100708F8E /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448AFD22AE43D100708F8E /* FourthViewController.m */; };
+		62448B0122AE43FE00708F8E /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 62448B0022AE43FE00708F8E /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,14 @@
 		62448AEF22AD93EB00708F8E /* item2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = item2.pdf; sourceTree = "<group>"; };
 		62448AF222AD972700708F8E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		62448AF322AD972700708F8E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		62448AF522AE2F3E00708F8E /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		62448AF622AE2F3E00708F8E /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		62448AF822AE2F6A00708F8E /* item3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = item3.pdf; sourceTree = "<group>"; };
+		62448AFA22AE423200708F8E /* item4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = item4.pdf; sourceTree = "<group>"; };
+		62448AFC22AE43D100708F8E /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		62448AFD22AE43D100708F8E /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		62448AFF22AE43FE00708F8E /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		62448B0022AE43FE00708F8E /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,15 +125,23 @@
 				62448ABD22AD902700708F8E /* AppDelegate.m */,
 				62448ABF22AD902700708F8E /* FirstViewController.h */,
 				62448AC022AD902700708F8E /* FirstViewController.m */,
-				62448AC222AD902700708F8E /* Main.storyboard */,
 				62448AF222AD972700708F8E /* SecondViewController.h */,
 				62448AF322AD972700708F8E /* SecondViewController.m */,
-				62448AEE22AD93EB00708F8E /* item1.pdf */,
-				62448AEF22AD93EB00708F8E /* item2.pdf */,
+				62448AF522AE2F3E00708F8E /* ThirdViewController.h */,
+				62448AF622AE2F3E00708F8E /* ThirdViewController.m */,
+				62448AFC22AE43D100708F8E /* FourthViewController.h */,
+				62448AFD22AE43D100708F8E /* FourthViewController.m */,
+				62448AFF22AE43FE00708F8E /* CustomView.h */,
+				62448B0022AE43FE00708F8E /* CustomView.m */,
+				62448AC222AD902700708F8E /* Main.storyboard */,
 				62448AC522AD902800708F8E /* Assets.xcassets */,
 				62448AC722AD902800708F8E /* LaunchScreen.storyboard */,
 				62448ACA22AD902800708F8E /* Info.plist */,
 				62448ACB22AD902800708F8E /* main.m */,
+				62448AEE22AD93EB00708F8E /* item1.pdf */,
+				62448AEF22AD93EB00708F8E /* item2.pdf */,
+				62448AF822AE2F6A00708F8E /* item3.pdf */,
+				62448AFA22AE423200708F8E /* item4.pdf */,
 			);
 			path = "NSNotificationCenter-KVO";
 			sourceTree = "<group>";
@@ -251,6 +272,8 @@
 				62448AC622AD902800708F8E /* Assets.xcassets in Resources */,
 				62448AF122AD93EB00708F8E /* item2.pdf in Resources */,
 				62448AC422AD902700708F8E /* Main.storyboard in Resources */,
+				62448AFB22AE423200708F8E /* item4.pdf in Resources */,
+				62448AF922AE2F6A00708F8E /* item3.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +298,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62448AFE22AE43D100708F8E /* FourthViewController.m in Sources */,
 				62448AF422AD972700708F8E /* SecondViewController.m in Sources */,
+				62448AF722AE2F3E00708F8E /* ThirdViewController.m in Sources */,
 				62448AC122AD902700708F8E /* FirstViewController.m in Sources */,
+				62448B0122AE43FE00708F8E /* CustomView.m in Sources */,
 				62448ACC22AD902800708F8E /* main.m in Sources */,
 				62448ABE22AD902700708F8E /* AppDelegate.m in Sources */,
 			);

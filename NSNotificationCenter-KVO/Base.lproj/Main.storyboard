@@ -50,6 +50,60 @@
             </objects>
             <point key="canvasLocation" x="1078.2608695652175" y="-306.02678571428572"/>
         </scene>
+        <!--Third-->
+        <scene sceneID="ZSa-wE-CTt">
+            <objects>
+                <viewController id="l8z-DM-F2Q" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ILs-lt-LGI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Third View Controller" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SIw-NV-g2W">
+                                <rect key="frame" x="20" y="84" width="374" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F7J-LF-RmS">
+                                <rect key="frame" x="68.5" y="645" width="277" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="o8q-G7-SNh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="SIw-NV-g2W" firstAttribute="top" secondItem="sXA-Mg-Npm" secondAttribute="top" constant="40" id="1ur-bC-NhX"/>
+                            <constraint firstItem="SIw-NV-g2W" firstAttribute="centerX" secondItem="sXA-Mg-Npm" secondAttribute="centerX" id="AVD-nO-1AM"/>
+                            <constraint firstItem="F7J-LF-RmS" firstAttribute="centerX" secondItem="ILs-lt-LGI" secondAttribute="centerX" id="Mmp-fc-yeX"/>
+                            <constraint firstItem="sXA-Mg-Npm" firstAttribute="bottom" secondItem="F7J-LF-RmS" secondAttribute="bottom" constant="40" id="fk7-MF-U3c"/>
+                            <constraint firstItem="SIw-NV-g2W" firstAttribute="width" secondItem="ILs-lt-LGI" secondAttribute="width" constant="-40" id="gYz-NK-3MN"/>
+                            <constraint firstItem="F7J-LF-RmS" firstAttribute="width" secondItem="ILs-lt-LGI" secondAttribute="width" multiplier="0.67" id="j6Q-bV-TtK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sXA-Mg-Npm"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="etU-5e-fv1" appends="YES" id="v7v-3R-6pX"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" image="item3" selectedImage="item3" id="je9-fw-Kaz"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="fk7-MF-U3c" id="mwh-GZ-99B"/>
+                        <outlet property="textField" destination="F7J-LF-RmS" id="Zpf-0M-iT2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bD1-py-hbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="etU-5e-fv1">
+                    <connections>
+                        <action selector="viewTapped:" destination="l8z-DM-F2Q" id="d4a-Fp-0Lt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1078" y="348"/>
+        </scene>
         <!--First-->
         <scene sceneID="hcQ-DS-jgK">
             <objects>
@@ -102,15 +156,72 @@
                     <connections>
                         <segue destination="Hir-Yd-Qmi" kind="relationship" relationship="viewControllers" id="dM7-Gy-35L"/>
                         <segue destination="udY-q1-dft" kind="relationship" relationship="viewControllers" id="CnM-zd-pMi"/>
+                        <segue destination="l8z-DM-F2Q" kind="relationship" relationship="viewControllers" id="9EO-rJ-TcN"/>
+                        <segue destination="q6N-Wn-6Di" kind="relationship" relationship="viewControllers" id="5kl-x1-Cj9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uV1-d2-23t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="162" y="-630"/>
         </scene>
+        <!--Fourth-->
+        <scene sceneID="gAx-dT-9a5">
+            <objects>
+                <viewController id="q6N-Wn-6Di" customClass="FourthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gzd-3j-dME">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fourth View Controller" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xvt-M7-esF">
+                                <rect key="frame" x="20" y="84" width="374" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aoo-fA-WN7">
+                                <rect key="frame" x="87" y="146" width="153" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BnW-oD-EUt" customClass="CustomView">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="YFE-Mw-IEO" appends="YES" id="hsM-Ys-fdr"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="xvt-M7-esF" firstAttribute="top" secondItem="mj3-HT-hfn" secondAttribute="top" constant="40" id="ViK-Aq-Zji"/>
+                            <constraint firstItem="xvt-M7-esF" firstAttribute="width" secondItem="Gzd-3j-dME" secondAttribute="width" constant="-40" id="jdY-ZI-wOs"/>
+                            <constraint firstItem="xvt-M7-esF" firstAttribute="centerX" secondItem="mj3-HT-hfn" secondAttribute="centerX" id="zV6-97-zuP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mj3-HT-hfn"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fourth" image="item4" selectedImage="item4" id="L4w-Ki-x60" userLabel="Fourth"/>
+                    <connections>
+                        <outlet property="whiteView" destination="BnW-oD-EUt" id="G6B-3W-v0m"/>
+                        <outlet property="yellowView" destination="aoo-fA-WN7" id="7GV-wR-sT5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lB9-N7-P2t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="YFE-Mw-IEO">
+                    <connections>
+                        <action selector="whiteViewPanned:" destination="BnW-oD-EUt" id="hak-6Y-owT"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="347.54464285714283"/>
+        </scene>
     </scenes>
     <resources>
         <image name="item1" width="30" height="30"/>
         <image name="item2" width="30" height="28"/>
+        <image name="item3" width="30" height="28"/>
+        <image name="item4" width="30" height="30"/>
     </resources>
 </document>
